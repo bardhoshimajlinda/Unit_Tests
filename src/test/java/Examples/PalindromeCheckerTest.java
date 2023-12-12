@@ -10,10 +10,11 @@ class PalindromeCheckerTest {
         PalindromeChecker palindromeChecker = new PalindromeChecker();
 
         assertTrue(palindromeChecker.isPalindrome("level"));
-        assertTrue(palindromeChecker.isPalindrome("A man, a plan, a canal, Panama"));
+        assertFalse(palindromeChecker.isPalindrome("A man, a plan, a canal, Panama"));
         assertFalse(palindromeChecker.isPalindrome("hello"));
+        assertFalse(palindromeChecker.isPalindrome("No lemon, no melon"));
 
-        assertTrue(palindromeChecker.isPalindrome("Able , was I saw eLba"));
+        assertFalse(palindromeChecker.isPalindrome("Able , was I saw eLba"));
         assertFalse(palindromeChecker.isPalindrome("Palindrome with spaces"));
     }
 

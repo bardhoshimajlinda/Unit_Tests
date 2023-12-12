@@ -6,16 +6,17 @@ public class PalindromeChecker {
             throw new IllegalArgumentException("Input string cannot be null");
         }
 
-        String cleanedStr = str.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
+        String rev = "";
 
-        int length = cleanedStr.length();
+        boolean ans = false;
 
-        for (int i = 0; i < length / 2; i++) {
-            if (cleanedStr.charAt(i) != cleanedStr.charAt(length - i - 1)) {
-                return false;
-            }
+        for (int i = str.length() - 1; i >= 0; i--) {
+            rev = rev + str.charAt(i);
         }
 
-        return true;
+        if (str.equals(rev)) {
+            ans = true;
+        }
+        return ans;
     }
 }
