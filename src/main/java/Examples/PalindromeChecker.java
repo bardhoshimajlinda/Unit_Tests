@@ -6,17 +6,17 @@ public class PalindromeChecker {
             throw new IllegalArgumentException("Input string cannot be null");
         }
 
-        String rev = "";
+        String reverse = "";
 
-        boolean ans = false;
+        boolean result = false;
 
         for (int i = str.length() - 1; i >= 0; i--) {
-            rev = rev + str.charAt(i);
+            reverse = reverse + str.charAt(i);
         }
 
-        if (str.equals(rev)) {
-            ans = true;
+        if (str.equals(reverse)) {
+            result = true;
         }
-        return ans;
+        return result;
     }
 }
