@@ -34,10 +34,9 @@
         <dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
-            <version>3.23.1</version>
+            <version>3.24.2</version>
             <scope>test</scope>
         </dependency>
-
         <!-- JUnitParams -->
         <dependency>
             <groupId>pl.pragmatists</groupId>
@@ -96,6 +95,12 @@
             <version>3.4.6</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
 
         <!-- JUnit 4 -->
         <!--
@@ -103,6 +108,12 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>RELEASE</version>
             <scope>test</scope>
         </dependency>
         -->
